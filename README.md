@@ -1,31 +1,31 @@
-# 🖍️ SVG Editor
+# SVG Editor
 
-🎯 **Objective:**  
+**Objective:**  
 Develop a flexible and extensible console-based application for working with SVG files and basic shapes. The program enables users to open, edit, and save SVG files through a set of custom commands while maintaining data safety and control.
 
 ---
 
-## 🧩 Project Description
+## Project Description
 
 This application allows users to load and manipulate SVG (Scalable Vector Graphics) files containing basic shapes. The system reads supported shapes from an SVG file, enables editing operations, and saves the updated content back to the disk in a valid SVG format.
 
-### 📐 Supported Shapes
+### Supported Shapes
 - Rectangle (`<rect>`)
 - Circle (`<circle>`)
 - Line (`<line>`)
 - Polygon (`<polygon>`)
 > The application is designed with extensibility in mind, so new shapes can be added easily in the future.
 
-### 🗺️ Coordinate System
+### Coordinate System
 Assumes the default SVG coordinate system:
 - Positive X-axis: right
 - Positive Y-axis: down
 
 ---
 
-## 🔧 Features & Commands
+## Features & Commands
 
-### 📁 File Operations
+### File Operations
 - `open <filename>` – Load shapes from an existing SVG file
 - `close` – Close the current file without saving
 - `save` – Save changes to the currently open file
@@ -33,7 +33,7 @@ Assumes the default SVG coordinate system:
 - `exit` – Exit the program
 - `help` – List all available commands
 
-### ✏️ Shape Operations
+### Shape Operations
 - `print` – List all currently loaded shapes
 - `create <shape> <params>` – Add a new shape
 - `erase <index>` – Delete a shape by its number
@@ -42,7 +42,7 @@ Assumes the default SVG coordinate system:
 
 ---
 
-## 🧠 Design Focus
+## Design Focus
 
 - Clean OOP structure in Java
 - Follows Open/Closed Principle for easy shape extension
@@ -51,7 +51,7 @@ Assumes the default SVG coordinate system:
 
 ---
 
-## 📄 Example SVG Input
+## Example SVG Input
 
 ```xml
 <?xml version="1.0" standalone="no"?>
@@ -64,7 +64,7 @@ Assumes the default SVG coordinate system:
 </svg>
 ```
 
-## 💻 Sample Console Usage
+## Sample Console Usage
 
 ```console
 > open shapes.svg
